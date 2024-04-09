@@ -30,6 +30,7 @@
                     a.btn.btn-default.pull-right(
                         ng-if="$ctrl.server.status === 'started' || $ctrl.server.status ==='restarted'"
                         ng-click='$ctrl.restart()'
+                        style="margin-right: 5px;"
                     ) Перезапустить
     .col-md-3
         a.btn.btn-default.pull-right(ui-sref="servers.edit({id:$ctrl.server._id})") Изменить
